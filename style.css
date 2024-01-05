@@ -1,6 +1,14 @@
+:root{
+    --color1:#01d28e;
+    --color2:rgba(0,0,0,0.2);
+    --color3:#f7f7f4;
+    --color4:#fff;
+}
+
 body{
 font-family: 'Open Sans', sans-serif;
-box-shadow: 5px 10px #f7f7f4;
+box-shadow: 0 0 5px 10px var(--color3);
+margin:10% 20%;
 }
 
 *{
@@ -8,24 +16,25 @@ box-shadow: 5px 10px #f7f7f4;
     
   }
   
-  /* Create two unequal columns that floats next to each other */
   .column {
     float: left;
-    padding: 10px;
-    height: 450px; /* Should be removed. Only for demonstration */
+    padding:0 20px;
+    height: 450px; 
+    
+    
   }
   
   .left {
     width: 35%;
-    background-color:rgb(10, 229, 127);
+    background-color:var(--color1);
     font-size:12x;
     font-family: "Open sans";
-    color:#fff;
+    color:var(--color4);
   }
   
   .right {
     width: 65%;
-    background-color: ;
+    background-color: var(--color4);
   }
   
   /* Clear floats after the columns */
@@ -61,22 +70,34 @@ box-shadow: 5px 10px #f7f7f4;
     margin-right: 10px;
     border:none;
     border-bottom: 1px solid rgba(0,0,0,0.2);
-    background-color: #fff;
+    background-color:var(--color4);
   }
+ .text-container input:focus {
+   border-bottom:2px solid var(--color1) ;
+   outline-color:transparent;
+  }
+
+  .border:focus {
+    border-bottom:2px solid var(--color1) ;
+   outline-color:transparent;
+  }
+  
   .border{
     border:none;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    background-color:#fff;
+    border-bottom: 1px solid var(--color2);
+    background-color:var(--color4);
   }
 
   .send{
-    color:#fff;
-    background-color:rgb(10, 229, 127);
+    color:var(--color4);
+    background-color:var(--color1);
     border: none;
     padding:7px;
     border-radius: 5px;
   }
-
+.send:hover{
+    opacity:0.5;
+}
   .subject,.message{
     padding-top: 5%;
   }
