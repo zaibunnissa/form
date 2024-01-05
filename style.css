@@ -1,3 +1,82 @@
 body{
 font-family: 'Open Sans', sans-serif;
+box-shadow: 5px 10px #f7f7f4;
 }
+
+*{
+    box-sizing: border-box;
+    
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    height: 450px; /* Should be removed. Only for demonstration */
+  }
+  
+  .left {
+    width: 35%;
+    background-color:rgb(10, 229, 127);
+    font-size:12x;
+    font-family: "Open sans";
+    color:#fff;
+  }
+  
+  .right {
+    width: 65%;
+    background-color: ;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .row p{
+    font-size: 13px;
+    margin:18px;
+    padding:4px;
+  }
+
+  .text-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  
+  .text-container label {
+    flex-basis: 100%;
+    font-size:x-small;
+    flex-basis: calc(50% - 10px);
+    margin-right: 10px;
+    font-weight: 800;
+   
+  }
+  
+  .text-container input {
+    flex-basis: calc(50% - 10px);
+    margin-right: 10px;
+    border:none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    background-color: #fff;
+  }
+  .border{
+    border:none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    background-color:#fff;
+  }
+
+  .send{
+    color:#fff;
+    background-color:rgb(10, 229, 127);
+    border: none;
+    padding:7px;
+    border-radius: 5px;
+  }
+
+  .subject,.message{
+    padding-top: 5%;
+  }
